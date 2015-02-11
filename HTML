@@ -8,7 +8,7 @@
 }
 </style>
 </head>
-<body bgcolor="#5E4E34" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<center><body bgcolor="#5E4E34" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <!-- Save for Web Slices (frontpage2.psd) -->
 <table id="Table_01" width="800" height="701" border="0" cellpadding="0" cellspacing="0">
 	<tr>
@@ -53,7 +53,34 @@
 		<td>
 			<img src="images/frontpage2_14.gif" width="142" height="168" alt=""></td>
 		<td colspan="7">
-			<img src="images/frontpage2_15.gif" width="380" height="168" alt=""></td>
+<!--Slideshow-->
+<div class="slideShowCell">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.closerealty.com/storage/javascript/fadeslideshow.js"></script>
+<script type="text/javascript">
+var mygallery2=new fadeSlideShow({
+	wrapperid: "fadeshow2", //ID of blank DIV on page to house Slideshow
+	dimensions: [380, 168], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	imagearray: [
+		['http://www.yourrealtyco.com/images/window1.gif','','',''],
+['http://www.yourrealtyco.com/images/window2.gif','','',''],
+['http://www.yourrealtyco.com/images/window3.gif','','',''],
+['http://www.yourrealtyco.com/images/window4.gif','','',''],
+['http://www.yourrealtyco.com/images/window5.gif','','',''],
+['http://www.yourrealtyco.com/images/window6.gif','','','']
+
+	],
+	displaymode: {type:'auto', pause:2500, cycles:0, wraparound:true},
+	persist: true, //remember last viewed slide and recall within same session?
+	fadeduration: 2000, //transition duration (milliseconds) 2000 originally
+	descreveal: "always",
+	togglerid: "fadeshow2toggler"
+})
+</script>
+<div id="fadeshow2" style="position:relative; z-index: 1; align: right;">
+</div>
+
+			<!--<img src="images/frontpage2_15.gif" width="380" height="168" alt="">--></td>
 		<td colspan="3">
 			<a href="http://www.yourrealtyco.com/mlsSearch.html">
 			<img src="images/frontpage2_16.gif" width="278" height="168" alt="" class="style1"></a></td>
@@ -88,34 +115,7 @@
 	</tr>
 </table>
 
-<!--Slideshow-->
-<div class="slideShowCell">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://www.closerealty.com/storage/javascript/fadeslideshow.js"></script>
-<script type="text/javascript">
-var mygallery2=new fadeSlideShow({
-	wrapperid: "fadeshow2", //ID of blank DIV on page to house Slideshow
-	dimensions: [979, 553], //width/height of gallery in pixels. Should reflect dimensions of largest image
-	imagearray: [
-		['http://www.closerealty.com/images/website-images/Slides/Slide1-CHRPremier.jpg','','',''],
-['http://www.closerealty.com/images/website-images/Slides/Slide2-LizGiddens.jpg','','',''],
-['http://www.closerealty.com/images/website-images/Slides/Slide3-MaureenHorn.jpg','','',''],
-['http://www.closerealty.com/images/website-images/Slides/Slide4-PacificRealty.jpg','','',''],
-['http://www.closerealty.com/images/website-images/Slides/Slide5-BobbyHill.jpg','','',''],
-['http://www.closerealty.com/images/website-images/Slides/Slide6-MBmanage.jpg','','','']
-
-
-	],
-	displaymode: {type:'auto', pause:2500, cycles:0, wraparound:true},
-	persist: true, //remember last viewed slide and recall within same session?
-	fadeduration: 2000, //transition duration (milliseconds) 2000 originally
-	descreveal: "always",
-	togglerid: "fadeshow2toggler"
-})
-</script>
-<div id="fadeshow2" style="position:relative; z-index: 1; align: right;">
-</div>
 
 <!-- End Save for Web Slices -->
-</body>
+</body></center>
 </html>
